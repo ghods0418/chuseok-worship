@@ -5,6 +5,19 @@ const pages = [
       mainTitle: "성묘 예배",
       buttonText: "예배 시작하기"
     },
+
+    {
+      type: "order",
+      title: "순서",
+      items: [
+        { label: "사도신경" },
+        {
+          label: "성경 말씀",
+          note: "한 명, 한 절씩 돌아가며 읽고 의미를 새깁니다."
+        },
+        { label: "주기도문" }
+      ]
+    },
   
     {
       type: "common",
@@ -48,22 +61,23 @@ const pages = [
       type: "scripture",
       number: "03",
       reference: "시편 90:12",
-      translation: "현대어성경",
+      translation: "",
       content: [
-        "우리의 일생이 얼마나 짧은지 헤아릴 수 있게 하셔서",
-        "우리가 지혜로운 마음을 얻게 하소서."
+        "우리에게 우리 날 계수함을 가르치사",
+        "지혜의 마음을 얻게 하소서"
       ],
-      meaning: "우리에게 주어진 시간을 어떻게 살아갈 것인지 돌아봅니다"
+      meaning: "나의 남은 인생이 짧고 유한하다는 것을 진심으로 깨닫는 것입니다."
     },
   
     {
       type: "scripture",
       number: "04",
       reference: "시편 126:5~6",
-      translation: "현대어성경",
+      translation: "",
       content: [
-        "눈물로 씨를 뿌리는 자는 기쁨으로 거두리라.",
-        "울면서 씨를 가지고 나가 뿌리는 자는 단을 가지고 기쁨으로 돌아오리라."
+        "눈물을 흘리며 씨를 뿌리는 자는 기쁨으로 거두리로다.",
+        "울며 씨를 뿌리러 나가는 자는",
+        "정녕 기쁨으로 그 단을 가지고 돌아오리로다."
       ],
       meaning: "한 해 동안의 수고에는 맺어진 풍성한 결실과 그 기쁨이 있습니다"
     },
@@ -72,11 +86,13 @@ const pages = [
       type: "scripture",
       number: "05",
       reference: "신명기 16:15",
-      translation: "현대어성경",
+      translation: "",
       content: [
-        "여러분은 이 명절을 지키면서 여러분의 하나님 여호와께서",
-        "여러분의 농사와 여러분이 하는 모든 일에 복 주신 것을",
-        "감사하고 기뻐하십시오."
+        "네 하나님 여호와께서 택하신 곳에서",
+        "너는 칠 일 동안 네 하나님 여호와 앞에서 절기를 지키고",
+        "네 하나님 여호와께서 네 모든 물산과",
+        "네 손을 댄 모든 일에 복 주실 것이니",
+        "너는 온전히 즐거워할지니라."
       ],
       meaning: "하나님 주신 풍성한 수확에 감사하십시오"
     },
@@ -84,12 +100,13 @@ const pages = [
     {
       type: "scripture",
       number: "06",
-      reference: "시편 133:1, 3",
-      translation: "우리말성경",
+      reference: "시편 133:1",
+      translation: "",
       content: [
-        "형제가 함께 한마음으로 사는 것이 얼마나 선하고 얼마나 보기 좋은가.",
-        "헤르몬의 이슬이 시온 산에 내리는 것 같구나.",
-        "거기서 여호와께서 복을 내리시니 곧 영원한 생명이라."
+        "보라 형제가 연합하여 동거함이",
+        "어찌 그리 선하고 아름다운고.",
+        "헐몬의 이슬이 시온의 산들에 내림 같도다",
+        "거기서 여호와께서 복을 명령하셨나니 곧 영생이로다."
       ],
       meaning: "가족이 한 자리에 모여 화목한 모습을 하나님께서 축복하십니다"
     },
@@ -98,11 +115,11 @@ const pages = [
       type: "scripture",
       number: "07",
       reference: "골로새서 3:13",
-      translation: "우리말성경",
+      translation: "",
       content: [
-        "누가 누구에게 불평거리가 있더라도 서로 용납하고",
-        "서로 용서해 주십시오.",
-        "주께서 여러분을 용서하신 것같이 여러분도 그렇게 하십시오."
+        "누가 누구에게 불만이 있거든",
+        "서로 용납하여 피차 용서하되",
+        "주께서 너희를 용서하신 것 같이 너희도 그리하라"
       ],
       meaning: "가족 사이의 서운함과 갈등을 내려 놓으십시오"
     },
@@ -111,10 +128,10 @@ const pages = [
       type: "scripture",
       number: "08",
       reference: "잠언 17:1",
-      translation: "우리말성경",
+      translation: "",
       content: [
-        "마른 빵을 먹더라도 평안하고 조용한 것이",
-        "온갖 맛있는 음식이 가득하고도 다투며 사는 것보다 낫습니다."
+        "마른 떡 한 조각만 있고도 화목하는 것이",
+        "제육이 집에 가득하고도 다투는 것보다 나으니라"
       ],
       meaning: "가족간 화목과 사랑이 진정한 명절의 의미입니다"
     },
@@ -123,10 +140,11 @@ const pages = [
       type: "scripture",
       number: "09",
       reference: "고린도전서 13:13",
-      translation: "우리말성경",
+      translation: "",
       content: [
-        "그러므로 믿음, 소망, 사랑, 이 세 가지는 언제까지나 남아 있을 것인데",
-        "이 가운데 가장 위대한 것은 사랑입니다."
+        "그런즉 믿음, 소망, 사랑,",
+        "이 세 가지는 항상 있을 것인데",
+        "그 중의 제일은 사랑이라"
       ],
       meaning: "가족에게 가장 깊이 남아 있어야 할 것은 사랑입니다"
     },
@@ -135,11 +153,11 @@ const pages = [
       type: "scripture",
       number: "10",
       reference: "시편 103:17",
-      translation: "현대어성경",
+      translation: "",
       content: [
-        "한결같이 따스하게 아껴 주시는 여호와의 사랑 영원하니",
-        "주님을 모시고 사는 이에게 그 사랑 영원토록 보여주시리라.",
-        "그 자식의 자식에까지 주님의 어지심을 보이시리라."
+        "여호와의 인자하심은 자기를 경외하는 자에게",
+        "영원부터 영원까지 이르며",
+        "그의 의는 자손의 자손에게 미치리니"
       ],
       meaning: "그리하면 하나님께서 복을 주십니다"
     },
@@ -208,6 +226,10 @@ function renderPage() {
     renderCoverPage(page);
   }
 
+  if (page.type === "order") {
+    renderOrderPage(page);
+  }
+
   if (page.type === "common") {
     renderCommonPage(page);
   }
@@ -246,6 +268,44 @@ function renderCoverPage(page) {
         ${page.buttonText}
         <span aria-hidden="true">›</span>
       </button>
+
+    </div>
+  `;
+}
+
+
+function renderOrderPage(page) {
+  const items = page.items
+    .map((item) => {
+      const note = item.note
+        ? `
+          <p class="order-note">
+            ${item.note}
+          </p>
+        `
+        : "";
+
+      return `
+        <div class="order-item">
+          <p class="order-label">
+            ${item.label}
+          </p>
+          ${note}
+        </div>
+      `;
+    })
+    .join("");
+
+  pageContainer.innerHTML = `
+    <div class="order-page">
+
+      <h1 class="page-title">
+        ${page.title}
+      </h1>
+
+      <div class="order-list">
+        ${items}
+      </div>
 
     </div>
   `;
